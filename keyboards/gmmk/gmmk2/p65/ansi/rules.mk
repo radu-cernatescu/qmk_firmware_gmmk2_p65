@@ -20,9 +20,10 @@ BACKLIGHT_ENABLE = no        # Enable keyboard backlight functionality.
 RGBLIGHT_ENABLE = no         # Enable keyboard RGB underglow.
 BLUETOOTH_ENABLE = no        # Enable Bluetooth.
 AUDIO_ENABLE = no            # Audio output.
-RGB_MATRIX_ENABLE = yes      # Enable RGB matrix effects.
+RGB_MATRIX_ENABLE = no     # Enable RGB matrix effects.
 RGB_MATRIX_DRIVER = AW20216  # Enable RGB matrix effects.
 EEPROM_DRIVER = custom       # Enable SPI flash memory
+LTO_ENABLE = yes			 # This will cause the final step to take longer, but should get you a smaller compiled size.
 SRC +=  src/eeprom_flash.c \
         src/flash_spi.c \
         src/wb32_spi_master.c
